@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+  		var cars =["1.png","2.png","3.png","4.png"];
+ 		var position = 0;
+
+		setInterval(function(){
+ 		document.getElementById('myImage').src = cars[position];
+ 		position = position+1;
+            if(position == 4 )
+            {
+            	position=0;
+            }
+ 		},2000);
+	</script>
+</head>
+<body style="background-color: gray">
+
+	<div>
+		<center><h1>Ho Van Lai</h1><img id="myImage" src="1.png"></center>
+ 	</div>
+    <div>
+	<button>1</button>
+	<button>2</button>
+	<button>3</button>
+ 	</div>
+</body>
+</html>
